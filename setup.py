@@ -12,7 +12,7 @@ from setuptools import find_packages, setup
 import query
 
 setup(
-    name='copyright hub query service',
+    name='open permissions platform query service',
     version=query.__version__,
     description='Open Permissions Platform Coalition Query Service',
     author='CDE Catapult',
