@@ -19,6 +19,7 @@ from tornado.concurrent import Future
 from chub import API
 from chub.oauth2 import Read, get_token
 from koi import exceptions
+from koi.configure import ssl_server_options
 from bass.hubkey import parse_hub_key
 
 
@@ -141,7 +142,7 @@ def get_repository(repository_id):
     :param repository_id: the repository's ID
     :returns: a URL
     """
-    api = API(options.url_accounts, ca_certs=options.ssl_ca_cert)
+    api = API(options.url_accounts, ssl_options=ssl_server_options())
     response = yield api.accounts.repositories[repository_id].get()
 
     raise Return(response)
@@ -189,8 +190,8 @@ def service_client(service_type, location):
     token = yield get_token(
         options.url_auth, options.service_id,
         options.client_secret, scope=Read(),
-        ca_certs=options.ssl_ca_cert)
-    client = API(location, token=token, ca_certs=options.ssl_ca_cert)
+        ssl_options=ssl_server_options())
+    client = API(location, token=token, ssl_options=ssl_server_options())
     raise Return(client)
 
 
