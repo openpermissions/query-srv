@@ -154,11 +154,7 @@ egg_locks:
 			pip freeze >> $$req_file ; \
 			deactivate ; \
 			rm -rf $$venv_path ; \
-			sed -i '' -e 's|chub==|git+https://github.com/openpermissions/chub.git@|g' $$req_file ; \
-			sed -i '' -e 's|koi==|git+https://github.com/openpermissions/koi.git@|g' $$req_file ; \
 			sed -i '' -e 's|tuna==|git+https://github.com/CDECatapult/copyright-hub-data-model.git@|g' $$req_file ; \
-			sed -i '' -e 's|bass==|git+https://github.com/openpermissions/bass.git@|g' $$req_file ; \
-			sed -i '' -e 's|perch==|git+https://github.com/openpermissions/perch.git@|g' $$req_file ; \
 			sed -i '' -e 's|cloverpy==|git+https://github.com/catapultbamboo/cloverpy.git@|g' $$req_file ; \
 			sed -i '' -e 's|file-translate==|git+https://github.com/catapultbamboo/file_translate.git@|g' $$req_file ; \
 		fi; \
@@ -173,6 +169,6 @@ dev_register:
 dev_setup: dev_install dev_register
 
 test_register:
-	python query register_service copyright.hub@example.com password hogwarts 
+	python query register_service opp@example.com password toppco
 
 test_setup: dev_install test_register
