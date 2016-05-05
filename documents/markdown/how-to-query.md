@@ -25,7 +25,7 @@ This How-to describes how to query for asset, offer, and licensor
 information using the Open Permissions Platform Query Service.
 
 For issues and support, contact
-[support-copyrighthub@digicatapult.org.uk](mailto:support-copyrighthub@digicatapult.org.uk)
+[support@openpermissions.org](mailto:support@openpermissions.org)
 by email.
 
 ### See also
@@ -121,7 +121,7 @@ available to would-be users. Offers are identified by UUIDs that may
 be embedded in Hub Keys. For example, the following is a well formed
 Hub Key that identifies an offer:
 
-`https://copyrighthub.org/s1/chf/1451451435345/offer/8f3657697691aed2a2215c7a842f`
+`https://openpermissions.org/s1/chf/1451451435345/offer/8f3657697691aed2a2215c7a842f`
 
 with offer ID:
 
@@ -155,10 +155,10 @@ For full API details, see the
 
 The simplest query is a query by Hub Key, for example the following
 cURL command queries the staging Query Service with the Hub Key
-`https://copyrighthub.org/s1/hub1/80defa84505f48108858ab653d00aa2f/asset/6732a947b42e43efab8561a856f3352a`:
+`https://openpermissions.org/s1/hub1/80defa84505f48108858ab653d00aa2f/asset/6732a947b42e43efab8561a856f3352a`:
 
 ```
-curl -X GET --header "Accept: application/json" 'https://query-stage.copyrighthub.org/v1/query/entities?hub_key=https://copyrighthub.org/s1/hub1/80defa84505f48108858ab653d00aa2f/asset/6732a947b42e43efab8561a856f3352a'
+curl -X GET --header "Accept: application/json" 'https://query-stage.copyrighthub.org/v1/query/entities?hub_key=https://openpermissions.org/s1/hub1/80defa84505f48108858ab653d00aa2f/asset/6732a947b42e43efab8561a856f3352a'
 ```
 
 If the Hub Key is a valid key and the repository in which it is stored
@@ -291,7 +291,7 @@ which returns licensor data (pretty-printed for clarity):
     {
       "address": "Example Co\n101 Euston Road London\nNW1 2RA",
       "description": "A fictional company for demo purposes for the OPP project",
-      "email": "support-copyrighthub@cde.catapult.org.uk",
+      "email": "support@openpermissions.org",
       "id": "exampleco",
       "logo": "https://s3-eu-west-1.amazonaws.com/copyrighthub-matrix-images/logo_exampleco_sm.png",
       "name": "ExampleCo",
@@ -304,7 +304,7 @@ which returns licensor data (pretty-printed for clarity):
     {
       "address": "Example Co\n101 Euston Road London\nNW1 2RA",
       "description": "A fictional company for demo purposes for the OPP project",
-      "email": "support-copyrighthub@cde.catapult.org.uk",
+      "email": "support@openpermissions.org",
       "id": "exampleco",
       "logo": "https://s3-eu-west-1.amazonaws.com/copyrighthub-matrix-images/logo_exampleco_sm.png",
       "name": "ExampleCo",

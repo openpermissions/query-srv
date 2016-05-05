@@ -28,7 +28,7 @@ future_accounts_repositories = make_future([
 
 future_repositories = make_future([(
     {'repository_id': 'repo1'},
-    [{'source_id': 'https://copyrighthub.org/s0/hub1/asset/exampleco/ExampleCoPictureID/1',
+    [{'source_id': 'https://openpermissions.org/s0/hub1/asset/exampleco/ExampleCoPictureID/1',
      'source_id_type': 'chub'}]
 )])
 future_repository = make_future(
@@ -74,7 +74,7 @@ def test_post(service_client, get_repositories, get_repository):
 
     # MUT
     handler.request.body = ('[{"source_id":' +
-                            '"https://copyrighthub.org/s0/hub1/asset/exampleco/ExampleCoPictureID/1",' +
+                            '"https://openpermissions.org/s0/hub1/asset/exampleco/ExampleCoPictureID/1",' +
                             '"source_id_type":"chub"}]')
 
     handler.post().result()
@@ -82,7 +82,7 @@ def test_post(service_client, get_repositories, get_repository):
     assert handler.get_status() == 200
     get_repository.assert_called_once_with('repo1')
     get_repositories.assert_called_once_with(
-        [{'source_id': 'https://copyrighthub.org/s0/hub1/asset/exampleco/ExampleCoPictureID/1',
+        [{'source_id': 'https://openpermissions.org/s0/hub1/asset/exampleco/ExampleCoPictureID/1',
           'source_id_type': 'chub'}])
 
 
@@ -107,7 +107,7 @@ def test_post_with_bad_data(service_client, get_repositories, get_repository):
 
     # MUT
     handler.request.body = ('[{"source_id":' +
-                            '"https://copyrighthub.org/s0/hub1/asset/exampleco/ExampleCoPictureID/1",' +
+                            '"https://openpermissions.org/s0/hub1/asset/exampleco/ExampleCoPictureID/1",' +
                             '"source_id_type":""}]')
 
     with pytest.raises(HTTPError) as excinfo:

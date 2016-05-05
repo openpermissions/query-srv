@@ -644,7 +644,7 @@ how to get reference links](https://github.com/openpermissions/accounts-srv/blob
                                 "profile": "http://digicat.io/ns/ol/1.0/",
                                 "policyName": "Non-commercial Website",
                                 "policyDescription": "Use an image on a blog or website&lt;br/&gt;&lt;br/&gt;Site does not carry advertising or sell products or services.&lt;br/&gt;Site receives no more than 50,000 views per month&lt;br/&gt;Maximum size of image 400 x 400px.",
-                                "hubKey": "https://www.copyrighthub.org/s0/hub1/offer/chub/exampleco-offerid/01",
+                                "hubKey": "https://www.openpermissions.org/s0/hub1/offer/chub/exampleco-offerid/01",
                                 "undefined": "http://www.w3.org/ns/odrl/2/invalid",
                                 "permission": [
                                     {
@@ -658,11 +658,11 @@ how to get reference links](https://github.com/openpermissions/accounts-srv/blob
                                             {
                                                 "target": {
                                                     "predicate": "http://digicat.io/ns/olex/0.1/explicitOffer",
-                                                    "hubKey": "https://www.copyrighthub.org/s0/hub1/asset/chub/uuid/bab1717645504af49e58d864ca59b56a",
-                                                    "uid": "https://www.copyrighthub.org/s0/hub1/asset/chub/uuid/bab1717645504af49e58d864ca59b56a",
-                                                    "target_object": "https://www.copyrighthub.org/s0/hub1/offer/chub/exampleco-offerid/01"
+                                                    "hubKey": "https://www.openpermissions.org/s0/hub1/asset/chub/uuid/bab1717645504af49e58d864ca59b56a",
+                                                    "uid": "https://www.openpermissions.org/s0/hub1/asset/chub/uuid/bab1717645504af49e58d864ca59b56a",
+                                                    "target_object": "https://www.openpermissions.org/s0/hub1/offer/chub/exampleco-offerid/01"
                                                 },
-                                                "assigner": "https://www.copyrighthub.org/s0/hub1/party/chub/pid/exampleco",
+                                                "assigner": "https://www.openpermissions.org/s0/hub1/party/chub/pid/exampleco",
                                                 "constraint": [
                                                     {
                                                     "operator": "http://www.w3.org/ns/odrl/2/eq",
@@ -675,11 +675,11 @@ how to get reference links](https://github.com/openpermissions/accounts-srv/blob
                                         ],
                                         "target": {
                                             "predicate": "http://digicat.io/ns/olex/0.1/explicitOffer",
-                                            "hubKey": "https://www.copyrighthub.org/s0/hub1/asset/chub/uuid/bab1717645504af49e58d864ca59b56a",
-                                            "uid": "https://www.copyrighthub.org/s0/hub1/asset/chub/uuid/bab1717645504af49e58d864ca59b56a",
-                                            "target_object": "https://www.copyrighthub.org/s0/hub1/offer/chub/exampleco-offerid/01"
+                                            "hubKey": "https://www.openpermissions.org/s0/hub1/asset/chub/uuid/bab1717645504af49e58d864ca59b56a",
+                                            "uid": "https://www.openpermissions.org/s0/hub1/asset/chub/uuid/bab1717645504af49e58d864ca59b56a",
+                                            "target_object": "https://www.openpermissions.org/s0/hub1/offer/chub/exampleco-offerid/01"
                                         },
-                                        "assigner": "https://www.copyrighthub.org/s0/hub1/party/chub/pid/exampleco",
+                                        "assigner": "https://www.openpermissions.org/s0/hub1/party/chub/pid/exampleco",
                                         "constraint": [
                                             {
                                                 "operator": "http://www.w3.org/ns/odrl/2/lteq",
@@ -694,8 +694,8 @@ how to get reference links](https://github.com/openpermissions/accounts-srv/blob
                                             {
                                                 "views": 50000,
                                                 "host": {
-                                                    "hubKey": "https://www.copyrighthub.org/s0/hub1/asset/chub/uuid/fb0a704d48e149829cdc0ed7a5557be7",
-                                                    "uid": "https://www.copyrighthub.org/s0/hub1/asset/chub/uuid/fb0a704d48e149829cdc0ed7a5557be7",
+                                                    "hubKey": "https://www.openpermissions.org/s0/hub1/asset/chub/uuid/fb0a704d48e149829cdc0ed7a5557be7",
+                                                    "uid": "https://www.openpermissions.org/s0/hub1/asset/chub/uuid/fb0a704d48e149829cdc0ed7a5557be7",
                                                     "purpose": "http://digicat.io/ns/ol/1.0/non_commercial_purpose",
                                                     "description": "Blog, website, no advertising."
                                                 },
@@ -706,8 +706,8 @@ how to get reference links](https://github.com/openpermissions/accounts-srv/blob
                                                 "operator": "http://www.w3.org/ns/odrl/2/lteq",
                                                 "post": 1,
                                                 "host": {
-                                                    "hubKey": "https://www.copyrighthub.org/s0/hub1/asset/chub/uuid/fb0a704d48e149829cdc0ed7a5557be7",
-                                                    "uid": "https://www.copyrighthub.org/s0/hub1/asset/chub/uuid/fb0a704d48e149829cdc0ed7a5557be7",
+                                                    "hubKey": "https://www.openpermissions.org/s0/hub1/asset/chub/uuid/fb0a704d48e149829cdc0ed7a5557be7",
+                                                    "uid": "https://www.openpermissions.org/s0/hub1/asset/chub/uuid/fb0a704d48e149829cdc0ed7a5557be7",
                                                     "purpose": "http://digicat.io/ns/ol/1.0/non_commercial_purpose",
                                                     "description": "Blog, website, no advertising."
                                                 }
@@ -726,13 +726,13 @@ how to get reference links](https://github.com/openpermissions/accounts-srv/blob
                     {
                         "source_id_type": "examplecopictureid",
                         "source_id": "100123",
-                        "hub_key": ""https://copyrighthub.org/s0/hub1/asset/exampleco/examplecopictureid/100123",
+                        "hub_key": ""https://openpermissions.org/s0/hub1/asset/exampleco/examplecopictureid/100123",
                         "offers": [
                             {
                                 "profile": "http://digicat.io/ns/ol/1.0/",
                                 "policyName": "Non-commercial Website",
                                 "policyDescription": "Use an image on a blog or website&lt;br/&gt;&lt;br/&gt;Site does not carry advertising or sell products or services.&lt;br/&gt;Site receives no more than 50,000 views per month&lt;br/&gt;Maximum size of image 400 x 400px.",
-                                "hubKey": "https://www.copyrighthub.org/s0/hub1/offer/chub/exampleco-offerid/01",
+                                "hubKey": "https://www.openpermissions.org/s0/hub1/offer/chub/exampleco-offerid/01",
                                 "undefined": "http://www.w3.org/ns/odrl/2/invalid",
                                 "permission": [
                                     {
@@ -746,11 +746,11 @@ how to get reference links](https://github.com/openpermissions/accounts-srv/blob
                                             {
                                                 "target": {
                                                     "predicate": "http://digicat.io/ns/olex/0.1/explicitOffer",
-                                                    "hubKey": "https://www.copyrighthub.org/s0/hub1/asset/chub/uuid/bab1717645504af49e58d864ca59b56a",
-                                                    "uid": "https://www.copyrighthub.org/s0/hub1/asset/chub/uuid/bab1717645504af49e58d864ca59b56a",
-                                                    "target_object": "https://www.copyrighthub.org/s0/hub1/offer/chub/exampleco-offerid/01"
+                                                    "hubKey": "https://www.openpermissions.org/s0/hub1/asset/chub/uuid/bab1717645504af49e58d864ca59b56a",
+                                                    "uid": "https://www.openpermissions.org/s0/hub1/asset/chub/uuid/bab1717645504af49e58d864ca59b56a",
+                                                    "target_object": "https://www.openpermissions.org/s0/hub1/offer/chub/exampleco-offerid/01"
                                                 },
-                                                "assigner": "https://www.copyrighthub.org/s0/hub1/party/chub/pid/exampleco",
+                                                "assigner": "https://www.openpermissions.org/s0/hub1/party/chub/pid/exampleco",
                                                 "constraint": [
                                                     {
                                                     "operator": "http://www.w3.org/ns/odrl/2/eq",
@@ -763,11 +763,11 @@ how to get reference links](https://github.com/openpermissions/accounts-srv/blob
                                         ],
                                         "target": {
                                             "predicate": "http://digicat.io/ns/olex/0.1/explicitOffer",
-                                            "hubKey": "https://www.copyrighthub.org/s0/hub1/asset/chub/uuid/bab1717645504af49e58d864ca59b56a",
-                                            "uid": "https://www.copyrighthub.org/s0/hub1/asset/chub/uuid/bab1717645504af49e58d864ca59b56a",
-                                            "target_object": "https://www.copyrighthub.org/s0/hub1/offer/chub/exampleco-offerid/01"
+                                            "hubKey": "https://www.openpermissions.org/s0/hub1/asset/chub/uuid/bab1717645504af49e58d864ca59b56a",
+                                            "uid": "https://www.openpermissions.org/s0/hub1/asset/chub/uuid/bab1717645504af49e58d864ca59b56a",
+                                            "target_object": "https://www.openpermissions.org/s0/hub1/offer/chub/exampleco-offerid/01"
                                         },
-                                        "assigner": "https://www.copyrighthub.org/s0/hub1/party/chub/pid/exampleco",
+                                        "assigner": "https://www.openpermissions.org/s0/hub1/party/chub/pid/exampleco",
                                         "constraint": [
                                             {
                                                 "operator": "http://www.w3.org/ns/odrl/2/lteq",
@@ -782,8 +782,8 @@ how to get reference links](https://github.com/openpermissions/accounts-srv/blob
                                             {
                                                 "views": 50000,
                                                 "host": {
-                                                    "hubKey": "https://www.copyrighthub.org/s0/hub1/asset/chub/uuid/fb0a704d48e149829cdc0ed7a5557be7",
-                                                    "uid": "https://www.copyrighthub.org/s0/hub1/asset/chub/uuid/fb0a704d48e149829cdc0ed7a5557be7",
+                                                    "hubKey": "https://www.openpermissions.org/s0/hub1/asset/chub/uuid/fb0a704d48e149829cdc0ed7a5557be7",
+                                                    "uid": "https://www.openpermissions.org/s0/hub1/asset/chub/uuid/fb0a704d48e149829cdc0ed7a5557be7",
                                                     "purpose": "http://digicat.io/ns/ol/1.0/non_commercial_purpose",
                                                     "description": "Blog, website, no advertising."
                                                 },
@@ -794,8 +794,8 @@ how to get reference links](https://github.com/openpermissions/accounts-srv/blob
                                                 "operator": "http://www.w3.org/ns/odrl/2/lteq",
                                                 "post": 1,
                                                 "host": {
-                                                    "hubKey": "https://www.copyrighthub.org/s0/hub1/asset/chub/uuid/fb0a704d48e149829cdc0ed7a5557be7",
-                                                    "uid": "https://www.copyrighthub.org/s0/hub1/asset/chub/uuid/fb0a704d48e149829cdc0ed7a5557be7",
+                                                    "hubKey": "https://www.openpermissions.org/s0/hub1/asset/chub/uuid/fb0a704d48e149829cdc0ed7a5557be7",
+                                                    "uid": "https://www.openpermissions.org/s0/hub1/asset/chub/uuid/fb0a704d48e149829cdc0ed7a5557be7",
                                                     "purpose": "http://digicat.io/ns/ol/1.0/non_commercial_purpose",
                                                     "description": "Blog, website, no advertising."
                                                 }

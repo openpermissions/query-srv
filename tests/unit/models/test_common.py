@@ -185,7 +185,7 @@ def test_translate_id_pair():
 def test_translate_id_pair_hub_key_s1():
     original_id = {
         'source_id_type': 'hub_key',
-        'source_id': 'https://copyrighthub.org/s1/hub1/0123456789abcdef0123456789abcdef/asset/abcdef0123456789abcdef0123456789'
+        'source_id': 'https://openpermissions.org/s1/hub1/0123456789abcdef0123456789abcdef/asset/abcdef0123456789abcdef0123456789'
     }
     translated_id = translate_id_pair(original_id)
     assert translated_id == original_id
@@ -194,7 +194,7 @@ def test_translate_id_pair_hub_key_s1():
 def test_translate_id_pair_hub_key_s1_corrupt():
     original_id = {
         'source_id_type': 'hub_key',
-        'source_id': 'https://copyrighthub.org/s1/hub1/0123456789abcdef0123456789abcdef/asset/abcdef0123456789abcdefxyz'
+        'source_id': 'https://openpermissions.org/s1/hub1/0123456789abcdef0123456789abcdef/asset/abcdef0123456789abcdefxyz'
     }
     with pytest.raises(ValueError) as exc:
         translate_id_pair(original_id)
@@ -204,7 +204,7 @@ def test_translate_id_pair_hub_key_s1_corrupt():
 def test_translate_id_pair_hub_key_s0():
     original_id = {
         'source_id_type': 'hub_key',
-        'source_id': 'https://copyrighthub.org/s0/hub1/asset/maryevans/maryevanspictureid/10413373'
+        'source_id': 'https://openpermissions.org/s0/hub1/asset/maryevans/maryevanspictureid/10413373'
     }
     translated_id = translate_id_pair(original_id)
     assert translated_id == {'source_id_type': 'maryevanspictureid', 'source_id': '10413373'}
