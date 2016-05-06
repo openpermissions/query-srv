@@ -154,9 +154,6 @@ egg_locks:
 			pip freeze >> $$req_file ; \
 			deactivate ; \
 			rm -rf $$venv_path ; \
-			sed -i '' -e 's|tuna==|git+https://github.com/CDECatapult/copyright-hub-data-model.git@|g' $$req_file ; \
-			sed -i '' -e 's|cloverpy==|git+https://github.com/catapultbamboo/cloverpy.git@|g' $$req_file ; \
-			sed -i '' -e 's|file-translate==|git+https://github.com/catapultbamboo/file_translate.git@|g' $$req_file ; \
 		fi; \
 	done
 
