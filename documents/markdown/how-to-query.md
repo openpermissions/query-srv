@@ -181,15 +181,15 @@ the asset (pretty-printed below for clarity):
         "@container": "@set",
         "type": "@id"
       },
-      "hub": "http://openlicensing.org/ns/hub/",
-      "id": "http://openlicensing.org/ns/id/",
+      "hub": "http://openpermissions.org/ns/hub/",
+      "id": "http://openpermissions.org/ns/id/",
       "odrl": "http://www.w3.org/ns/odrl/2/",
-      "ol": "http://openlicensing.org/ns/ol/1.1/",
+      "ol": "http://openpermissions.org/ns/ol/1.1/",
       "ol:alsoIdentifiedBy": {
         "@container": "@set",
         "type": "@id"
       },
-      "olex": "http://openlicensing.org/ns/olex/1.0/",
+      "olex": "http://openpermissions.org/ns/olex/1.0/",
       "owl": "http://www.w3.org/2002/07/owl#",
       "permission": {
         "@container": "@set",

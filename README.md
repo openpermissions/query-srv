@@ -1,7 +1,7 @@
 The Open Permissions Platform Query Services
 ============================================
 
-This repository contains a the query service which can be used as a reference for Open Permissions Platform Services.
+This repository contains a query service which can be used as a reference for Open Permissions Platform Services.
 
 Running locally
 ===============
@@ -33,13 +33,13 @@ To have a "clean" target from build artifacts:
 make clean
 ```
 
-To install requirements. By default prod requirement is used:
+To install requirements. By default, prod requirement is used:
 
 ```
 make requirements [REQUIREMENT=test|dev|prod]
 ```
 
-To run all unit tests and generate a HTML code coverage report along with a
+To run all unit tests and generate an HTML code coverage report along with a
 JUnit XML report in tests/unit/reports:
 
 ```
