@@ -25,7 +25,7 @@ This How-to describes how to query for asset, offer, and licensor
 information using the Open Permissions Platform Query Service.
 
 For issues and support, contact
-[support-copyrighthub@digicatapult.org.uk](mailto:support-copyrighthub@digicatapult.org.uk)
+[support@openpermissions.org](mailto:support@openpermissions.org)
 by email.
 
 ### See also
@@ -121,7 +121,7 @@ available to would-be users. Offers are identified by UUIDs that may
 be embedded in Hub Keys. For example, the following is a well formed
 Hub Key that identifies an offer:
 
-`https://copyrighthub.org/s1/chf/1451451435345/offer/8f3657697691aed2a2215c7a842f`
+`https://openpermissions.org/s1/chf/1451451435345/offer/8f3657697691aed2a2215c7a842f`
 
 with offer ID:
 
@@ -155,10 +155,10 @@ For full API details, see the
 
 The simplest query is a query by Hub Key, for example the following
 cURL command queries the staging Query Service with the Hub Key
-`https://copyrighthub.org/s1/hub1/80defa84505f48108858ab653d00aa2f/asset/6732a947b42e43efab8561a856f3352a`:
+`https://openpermissions.org/s1/hub1/80defa84505f48108858ab653d00aa2f/asset/6732a947b42e43efab8561a856f3352a`:
 
 ```
-curl -X GET --header "Accept: application/json" 'https://query-stage.copyrighthub.org/v1/query/entities?hub_key=https://copyrighthub.org/s1/hub1/80defa84505f48108858ab653d00aa2f/asset/6732a947b42e43efab8561a856f3352a'
+curl -X GET --header "Accept: application/json" 'https://query-stage.copyrighthub.org/v1/query/entities?hub_key=https://openpermissions.org/s1/hub1/80defa84505f48108858ab653d00aa2f/asset/6732a947b42e43efab8561a856f3352a'
 ```
 
 If the Hub Key is a valid key and the repository in which it is stored
@@ -181,15 +181,15 @@ the asset (pretty-printed below for clarity):
         "@container": "@set",
         "type": "@id"
       },
-      "hub": "http://openlicensing.org/ns/hub/",
-      "id": "http://openlicensing.org/ns/id/",
+      "hub": "http://openpermissions.org/ns/hub/",
+      "id": "http://openpermissions.org/ns/id/",
       "odrl": "http://www.w3.org/ns/odrl/2/",
-      "ol": "http://openlicensing.org/ns/ol/1.1/",
-      "ol:alsoIdentifiedBy": {
+      "op": "http://openpermissions.org/ns/op/1.1/",
+      "op:alsoIdentifiedBy": {
         "@container": "@set",
         "type": "@id"
       },
-      "olex": "http://openlicensing.org/ns/olex/1.0/",
+      "opex": "http://openpermissions.org/ns/opex/1.0/",
       "owl": "http://www.w3.org/2002/07/owl#",
       "permission": {
         "@container": "@set",
@@ -209,18 +209,18 @@ the asset (pretty-printed below for clarity):
     "@graph": [
       {
         "@id": "_:f16b5c31d1a09416b82c17075c935283cb1",
-        "@type": "ol:Id",
-        "ol:id_type": {
+        "@type": "op:Id",
+        "op:id_type": {
           "@id": "hub:examplecopictureid"
         },
-        "ol:value": {
+        "op:value": {
           "@value": "1"
         }
       },
       {
         "@id": "id:6732a947b42e43efab8561a856f3352a",
         "@type": [
-          "ol:Asset",
+          "op:Asset",
           "Offer"
         ],
         "dcterm:description": {
@@ -230,7 +230,7 @@ the asset (pretty-printed below for clarity):
           "@type": "xsd:dateTime",
           "@value": "2016-04-15T09:18:24.260000+00:00"
         },
-        "ol:alsoIdentifiedBy": [
+        "op:alsoIdentifiedBy": [
           {
             "@id": "_:f16b5c31d1a09416b82c17075c935283cb1"
           }
@@ -269,10 +269,10 @@ for the licensors of the asset. The `"@graph"` data includes the
 source ID type and value:
 
 ```
-"ol:id_type": {
+"op:id_type": {
 	"@id": "hub:examplecopictureid"
 	},
-	"ol:value": {
+	"op:value": {
 		"@value": "1"
 	}
 ```
@@ -291,7 +291,7 @@ which returns licensor data (pretty-printed for clarity):
     {
       "address": "Example Co\n101 Euston Road London\nNW1 2RA",
       "description": "A fictional company for demo purposes for the OPP project",
-      "email": "support-copyrighthub@cde.catapult.org.uk",
+      "email": "support@openpermissions.org",
       "id": "exampleco",
       "logo": "https://s3-eu-west-1.amazonaws.com/copyrighthub-matrix-images/logo_exampleco_sm.png",
       "name": "ExampleCo",
@@ -304,7 +304,7 @@ which returns licensor data (pretty-printed for clarity):
     {
       "address": "Example Co\n101 Euston Road London\nNW1 2RA",
       "description": "A fictional company for demo purposes for the OPP project",
-      "email": "support-copyrighthub@cde.catapult.org.uk",
+      "email": "support@openpermissions.org",
       "id": "exampleco",
       "logo": "https://s3-eu-west-1.amazonaws.com/copyrighthub-matrix-images/logo_exampleco_sm.png",
       "name": "ExampleCo",
@@ -373,9 +373,9 @@ The result is extremely verbose, only a fragment is shown below:
               "@id": "id:b9fdb19373af44c0b2b0b43b132ed27b",
               "@type": [
                 "Constraint",
-                "olex:Constraint"
+                "opex:Constraint"
               ],
-              "olex:attributeText": "This photograph (c) Test Demo PseudoLtd Ltd, all rights reserved.",
+              "opex:attributeText": "This photograph (c) Test Demo PseudoLtd Ltd, all rights reserved.",
               "operator": {
                 "@id": "odrl:eq"
               }
@@ -385,7 +385,7 @@ The result is extremely verbose, only a fragment is shown below:
               "@type": [
                 "Asset",
                 "Policy",
-                "ol:Policy",
+                "op:Policy",
                 "Offer"
               ],
               "assigner": {
@@ -415,7 +415,7 @@ The result is extremely verbose, only a fragment is shown below:
                 }
               ],
               "inheritAllowed": false,
-              "ol:policyDescription": "Use an image on a blog or website<br/><br/>Site does not carry advertising or sell products or services.<br/>Site receives no more than 50,000 views per month<br/>Maximum size of image 400 x 400px.",
+              "op:policyDescription": "Use an image on a blog or website<br/><br/>Site does not carry advertising or sell products or services.<br/>Site receives no more than 50,000 views per month<br/>Maximum size of image 400 x 400px.",
               "permission": [
                 {
                   "@id": "id:45b48b17d4214596b743902e2a3289c1"
