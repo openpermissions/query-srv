@@ -181,15 +181,15 @@ the asset (pretty-printed below for clarity):
         "@container": "@set",
         "type": "@id"
       },
-      "hub": "http://openlicensing.org/ns/hub/",
-      "id": "http://openlicensing.org/ns/id/",
+      "hub": "http://openpermissions.org/ns/hub/",
+      "id": "http://openpermissions.org/ns/id/",
       "odrl": "http://www.w3.org/ns/odrl/2/",
-      "ol": "http://openlicensing.org/ns/ol/1.1/",
-      "ol:alsoIdentifiedBy": {
+      "op": "http://openpermissions.org/ns/op/1.1/",
+      "op:alsoIdentifiedBy": {
         "@container": "@set",
         "type": "@id"
       },
-      "olex": "http://openlicensing.org/ns/olex/1.0/",
+      "opex": "http://openpermissions.org/ns/opex/1.0/",
       "owl": "http://www.w3.org/2002/07/owl#",
       "permission": {
         "@container": "@set",
@@ -209,18 +209,18 @@ the asset (pretty-printed below for clarity):
     "@graph": [
       {
         "@id": "_:f16b5c31d1a09416b82c17075c935283cb1",
-        "@type": "ol:Id",
-        "ol:id_type": {
+        "@type": "op:Id",
+        "op:id_type": {
           "@id": "hub:examplecopictureid"
         },
-        "ol:value": {
+        "op:value": {
           "@value": "1"
         }
       },
       {
         "@id": "id:6732a947b42e43efab8561a856f3352a",
         "@type": [
-          "ol:Asset",
+          "op:Asset",
           "Offer"
         ],
         "dcterm:description": {
@@ -230,7 +230,7 @@ the asset (pretty-printed below for clarity):
           "@type": "xsd:dateTime",
           "@value": "2016-04-15T09:18:24.260000+00:00"
         },
-        "ol:alsoIdentifiedBy": [
+        "op:alsoIdentifiedBy": [
           {
             "@id": "_:f16b5c31d1a09416b82c17075c935283cb1"
           }
@@ -269,10 +269,10 @@ for the licensors of the asset. The `"@graph"` data includes the
 source ID type and value:
 
 ```
-"ol:id_type": {
+"op:id_type": {
 	"@id": "hub:examplecopictureid"
 	},
-	"ol:value": {
+	"op:value": {
 		"@value": "1"
 	}
 ```
@@ -373,9 +373,9 @@ The result is extremely verbose, only a fragment is shown below:
               "@id": "id:b9fdb19373af44c0b2b0b43b132ed27b",
               "@type": [
                 "Constraint",
-                "olex:Constraint"
+                "opex:Constraint"
               ],
-              "olex:attributeText": "This photograph (c) Test Demo PseudoLtd Ltd, all rights reserved.",
+              "opex:attributeText": "This photograph (c) Test Demo PseudoLtd Ltd, all rights reserved.",
               "operator": {
                 "@id": "odrl:eq"
               }
@@ -385,7 +385,7 @@ The result is extremely verbose, only a fragment is shown below:
               "@type": [
                 "Asset",
                 "Policy",
-                "ol:Policy",
+                "op:Policy",
                 "Offer"
               ],
               "assigner": {
@@ -415,7 +415,7 @@ The result is extremely verbose, only a fragment is shown below:
                 }
               ],
               "inheritAllowed": false,
-              "ol:policyDescription": "Use an image on a blog or website<br/><br/>Site does not carry advertising or sell products or services.<br/>Site receives no more than 50,000 views per month<br/>Maximum size of image 400 x 400px.",
+              "op:policyDescription": "Use an image on a blog or website<br/><br/>Site does not carry advertising or sell products or services.<br/>Site receives no more than 50,000 views per month<br/>Maximum size of image 400 x 400px.",
               "permission": [
                 {
                   "@id": "id:45b48b17d4214596b743902e2a3289c1"
