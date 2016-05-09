@@ -110,7 +110,7 @@ The output should be of the form
                         "dct": "http://purl.org/dc/terms/",
                         "@language": "en",
                         "dc": "http://purl.org/dc/elements/1.1/",
-                        "olex": "http://openpermissions.org/ns/olex/1.0/",
+                        "opex": "http://openpermissions.org/ns/opex/1.0/",
                         "ol:alsoIdentifiedBy": {
                             "type": "@id",
                             "@container": "@set"
@@ -122,7 +122,7 @@ The output should be of the form
                             "@container": "@set"
                         },
                         "xsd": "http://www.w3.org/2001/XMLSchema#",
-                        "ol": "http://openpermissions.org/ns/ol/1.1/",
+                        "ol": "http://openpermissions.org/ns/op/1.1/",
                         "id": "http://openpermissions.org/ns/id/",
                         "permission": {
                             "type": "@id",
@@ -139,7 +139,7 @@ The output should be of the form
                                 "@id": "id:dae3ca88c9ab4550bbcee20d9190fd3d"
                             }
                         ],
-                        "profile": "http://openpermissions.org/ns/ol/1.1/",
+                        "profile": "http://openpermissions.org/ns/op/1.1/",
                         "undefined": {
                             "@id": "odrl:invalid"
                         },
@@ -276,7 +276,7 @@ The output should be of the form
                         "@id": "id:186c1f0fa06f4198a9e2f007c7c5b716",
                         "@type": "Constraint",
                         "unit": {
-                            "@id": "olex:pixel"
+                            "@id": "opex:pixel"
                         },
                         "height": 400
                     }]
@@ -341,7 +341,7 @@ The output should be of the form
                         "dct": "http://purl.org/dc/terms/",
                         "@language": "en",
                         "dc": "http://purl.org/dc/elements/1.1/",
-                        "olex": "http://openpermissions.org/ns/olex/1.0/",
+                        "opex": "http://openpermissions.org/ns/opex/1.0/",
                         "ol:alsoIdentifiedBy": {
                             "type": "@id",
                             "@container": "@set"
@@ -353,7 +353,7 @@ The output should be of the form
                             "@container": "@set"
                         },
                         "xsd": "http://www.w3.org/2001/XMLSchema#",
-                        "ol": "http://openpermissions.org/ns/ol/1.1/",
+                        "ol": "http://openpermissions.org/ns/op/1.1/",
                         "id": "http://openpermissions.org/ns/id/",
                         "permission": {
                             "type": "@id",
@@ -370,7 +370,7 @@ The output should be of the form
                                 "@id": "id:dae3ca88c9ab4550bbcee20d9190fd3d"
                             }
                         ],
-                        "profile": "http://openpermissions.org/ns/ol/1.1/",
+                        "profile": "http://openpermissions.org/ns/op/1.1/",
                         "undefined": {
                             "@id": "odrl:invalid"
                         },
@@ -507,7 +507,7 @@ The output should be of the form
                         "@id": "id:186c1f0fa06f4198a9e2f007c7c5b716",
                         "@type": "Constraint",
                         "unit": {
-                            "@id": "olex:pixel"
+                            "@id": "opex:pixel"
                         },
                         "height": 400
                     }]
@@ -641,7 +641,7 @@ how to get reference links](https://github.com/openpermissions/accounts-srv/blob
                         "source_id": "100456",
                         "offers": [
                             {
-                                "profile": "http://digicat.io/ns/ol/1.0/",
+                                "profile": "http://digicat.io/ns/op/1.0/",
                                 "policyName": "Non-commercial Website",
                                 "policyDescription": "Use an image on a blog or website&lt;br/&gt;&lt;br/&gt;Site does not carry advertising or sell products or services.&lt;br/&gt;Site receives no more than 50,000 views per month&lt;br/&gt;Maximum size of image 400 x 400px.",
                                 "hubKey": "https://www.openpermissions.org/s0/hub1/offer/chub/exampleco-offerid/01",
@@ -657,7 +657,7 @@ how to get reference links](https://github.com/openpermissions/accounts-srv/blob
                                             },
                                             {
                                                 "target": {
-                                                    "predicate": "http://digicat.io/ns/olex/0.1/explicitOffer",
+                                                    "predicate": "http://digicat.io/ns/opex/0.1/explicitOffer",
                                                     "hubKey": "https://www.openpermissions.org/s0/hub1/asset/chub/uuid/bab1717645504af49e58d864ca59b56a",
                                                     "uid": "https://www.openpermissions.org/s0/hub1/asset/chub/uuid/bab1717645504af49e58d864ca59b56a",
                                                     "target_object": "https://www.openpermissions.org/s0/hub1/offer/chub/exampleco-offerid/01"
@@ -674,7 +674,7 @@ how to get reference links](https://github.com/openpermissions/accounts-srv/blob
                                             }
                                         ],
                                         "target": {
-                                            "predicate": "http://digicat.io/ns/olex/0.1/explicitOffer",
+                                            "predicate": "http://digicat.io/ns/opex/0.1/explicitOffer",
                                             "hubKey": "https://www.openpermissions.org/s0/hub1/asset/chub/uuid/bab1717645504af49e58d864ca59b56a",
                                             "uid": "https://www.openpermissions.org/s0/hub1/asset/chub/uuid/bab1717645504af49e58d864ca59b56a",
                                             "target_object": "https://www.openpermissions.org/s0/hub1/offer/chub/exampleco-offerid/01"
@@ -684,11 +684,11 @@ how to get reference links](https://github.com/openpermissions/accounts-srv/blob
                                             {
                                                 "operator": "http://www.w3.org/ns/odrl/2/lteq",
                                                 "width": 400,
-                                                "unit": "http://digicat.io/ns/ol/1.0/pixel"
+                                                "unit": "http://digicat.io/ns/op/1.0/pixel"
                                             },
                                             {
                                                 "operator": "http://www.w3.org/ns/odrl/2/lteq",
-                                                "unit": "http://digicat.io/ns/ol/1.0/pixel",
+                                                "unit": "http://digicat.io/ns/op/1.0/pixel",
                                                 "height": 400
                                             },
                                             {
@@ -696,11 +696,11 @@ how to get reference links](https://github.com/openpermissions/accounts-srv/blob
                                                 "host": {
                                                     "hubKey": "https://www.openpermissions.org/s0/hub1/asset/chub/uuid/fb0a704d48e149829cdc0ed7a5557be7",
                                                     "uid": "https://www.openpermissions.org/s0/hub1/asset/chub/uuid/fb0a704d48e149829cdc0ed7a5557be7",
-                                                    "purpose": "http://digicat.io/ns/ol/1.0/non_commercial_purpose",
+                                                    "purpose": "http://digicat.io/ns/op/1.0/non_commercial_purpose",
                                                     "description": "Blog, website, no advertising."
                                                 },
                                                 "operator": "http://www.w3.org/ns/odrl/2/lteq",
-                                                "unit": "http://digicat.io/ns/ol/1.0/visitorsPerMonth"
+                                                "unit": "http://digicat.io/ns/op/1.0/visitorsPerMonth"
                                             },
                                             {
                                                 "operator": "http://www.w3.org/ns/odrl/2/lteq",
@@ -708,13 +708,13 @@ how to get reference links](https://github.com/openpermissions/accounts-srv/blob
                                                 "host": {
                                                     "hubKey": "https://www.openpermissions.org/s0/hub1/asset/chub/uuid/fb0a704d48e149829cdc0ed7a5557be7",
                                                     "uid": "https://www.openpermissions.org/s0/hub1/asset/chub/uuid/fb0a704d48e149829cdc0ed7a5557be7",
-                                                    "purpose": "http://digicat.io/ns/ol/1.0/non_commercial_purpose",
+                                                    "purpose": "http://digicat.io/ns/op/1.0/non_commercial_purpose",
                                                     "description": "Blog, website, no advertising."
                                                 }
                                             },
                                             {
                                                 "operator": "http://www.w3.org/ns/odrl/2/isPartOf",
-                                                "spatial": "http://digicat.io/ns/ol/1.0/World"
+                                                "spatial": "http://digicat.io/ns/op/1.0/World"
                                             }
                                         ],
                                         "action": "http://www.w3.org/ns/odrl/2/display"
@@ -729,7 +729,7 @@ how to get reference links](https://github.com/openpermissions/accounts-srv/blob
                         "hub_key": ""https://openpermissions.org/s0/hub1/asset/exampleco/examplecopictureid/100123",
                         "offers": [
                             {
-                                "profile": "http://digicat.io/ns/ol/1.0/",
+                                "profile": "http://digicat.io/ns/op/1.0/",
                                 "policyName": "Non-commercial Website",
                                 "policyDescription": "Use an image on a blog or website&lt;br/&gt;&lt;br/&gt;Site does not carry advertising or sell products or services.&lt;br/&gt;Site receives no more than 50,000 views per month&lt;br/&gt;Maximum size of image 400 x 400px.",
                                 "hubKey": "https://www.openpermissions.org/s0/hub1/offer/chub/exampleco-offerid/01",
@@ -745,7 +745,7 @@ how to get reference links](https://github.com/openpermissions/accounts-srv/blob
                                             },
                                             {
                                                 "target": {
-                                                    "predicate": "http://digicat.io/ns/olex/0.1/explicitOffer",
+                                                    "predicate": "http://digicat.io/ns/opex/0.1/explicitOffer",
                                                     "hubKey": "https://www.openpermissions.org/s0/hub1/asset/chub/uuid/bab1717645504af49e58d864ca59b56a",
                                                     "uid": "https://www.openpermissions.org/s0/hub1/asset/chub/uuid/bab1717645504af49e58d864ca59b56a",
                                                     "target_object": "https://www.openpermissions.org/s0/hub1/offer/chub/exampleco-offerid/01"
@@ -762,7 +762,7 @@ how to get reference links](https://github.com/openpermissions/accounts-srv/blob
                                             }
                                         ],
                                         "target": {
-                                            "predicate": "http://digicat.io/ns/olex/0.1/explicitOffer",
+                                            "predicate": "http://digicat.io/ns/opex/0.1/explicitOffer",
                                             "hubKey": "https://www.openpermissions.org/s0/hub1/asset/chub/uuid/bab1717645504af49e58d864ca59b56a",
                                             "uid": "https://www.openpermissions.org/s0/hub1/asset/chub/uuid/bab1717645504af49e58d864ca59b56a",
                                             "target_object": "https://www.openpermissions.org/s0/hub1/offer/chub/exampleco-offerid/01"
@@ -772,11 +772,11 @@ how to get reference links](https://github.com/openpermissions/accounts-srv/blob
                                             {
                                                 "operator": "http://www.w3.org/ns/odrl/2/lteq",
                                                 "width": 400,
-                                                "unit": "http://digicat.io/ns/ol/1.0/pixel"
+                                                "unit": "http://digicat.io/ns/op/1.0/pixel"
                                             },
                                             {
                                                 "operator": "http://www.w3.org/ns/odrl/2/lteq",
-                                                "unit": "http://digicat.io/ns/ol/1.0/pixel",
+                                                "unit": "http://digicat.io/ns/op/1.0/pixel",
                                                 "height": 400
                                             },
                                             {
@@ -784,11 +784,11 @@ how to get reference links](https://github.com/openpermissions/accounts-srv/blob
                                                 "host": {
                                                     "hubKey": "https://www.openpermissions.org/s0/hub1/asset/chub/uuid/fb0a704d48e149829cdc0ed7a5557be7",
                                                     "uid": "https://www.openpermissions.org/s0/hub1/asset/chub/uuid/fb0a704d48e149829cdc0ed7a5557be7",
-                                                    "purpose": "http://digicat.io/ns/ol/1.0/non_commercial_purpose",
+                                                    "purpose": "http://digicat.io/ns/op/1.0/non_commercial_purpose",
                                                     "description": "Blog, website, no advertising."
                                                 },
                                                 "operator": "http://www.w3.org/ns/odrl/2/lteq",
-                                                "unit": "http://digicat.io/ns/ol/1.0/visitorsPerMonth"
+                                                "unit": "http://digicat.io/ns/op/1.0/visitorsPerMonth"
                                             },
                                             {
                                                 "operator": "http://www.w3.org/ns/odrl/2/lteq",
@@ -796,13 +796,13 @@ how to get reference links](https://github.com/openpermissions/accounts-srv/blob
                                                 "host": {
                                                     "hubKey": "https://www.openpermissions.org/s0/hub1/asset/chub/uuid/fb0a704d48e149829cdc0ed7a5557be7",
                                                     "uid": "https://www.openpermissions.org/s0/hub1/asset/chub/uuid/fb0a704d48e149829cdc0ed7a5557be7",
-                                                    "purpose": "http://digicat.io/ns/ol/1.0/non_commercial_purpose",
+                                                    "purpose": "http://digicat.io/ns/op/1.0/non_commercial_purpose",
                                                     "description": "Blog, website, no advertising."
                                                 }
                                             },
                                             {
                                                 "operator": "http://www.w3.org/ns/odrl/2/isPartOf",
-                                                "spatial": "http://digicat.io/ns/ol/1.0/World"
+                                                "spatial": "http://digicat.io/ns/op/1.0/World"
                                             }
                                         ],
                                         "action": "http://www.w3.org/ns/odrl/2/display"

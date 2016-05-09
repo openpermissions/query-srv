@@ -1,7 +1,10 @@
 The Open Permissions Platform Query Services
 ============================================
 
-This repository contains a query service which can be used as a reference for Open Permissions Platform Services.
+This repository contains the Query Service for the Open Permissions Platform.
+
+The query service provides an interface for retrieving licensing data stored in repositories.
+
 
 Running locally
 ===============
