@@ -8,7 +8,7 @@
 + [API status in the current release](#api-status-in-the-current-release)
 + [Example user story](#example-user-story)
 + [Hub Keys](#hub-keys)
-+ [Asset IDs](#asset-ids)
++ [Source IDs](#source-ids)
 + [Offer IDs](#offer-ids)
 + [The Query Service REST API](#the-query-service-rest-api)
 + [Query examples](#query-examples)  
@@ -440,4 +440,5 @@ The result is extremely verbose, only a fragment is shown below:
 }
 ```
 
-
+<!-- Copyright Notice -->
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
