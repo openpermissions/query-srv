@@ -1,13 +1,21 @@
 The Open Permissions Platform Query Services
 ============================================
 
+Useful Links
+============
+* [Open Permissions Platform](http://openpermissions.org)
+* [Low level Design](https://github.com/openpermissions/query-srv/blob/master/documents/markdown/low-level-design.md)
+* [API Documentation] (https://github.com/openpermissions/query-srv/blob/master/documents/apiary/api.md)
+* [How to use the Query Service](https://github.com/openpermissions/query-srv/blob/master/documents/markdown/how-to-query.md)
+
+Service Overview
+================
 This repository contains the Query Service for the Open Permissions Platform.
 
 The query service provides an interface for retrieving licensing data stored in repositories.
 
-
 Running locally
-===============
+---------------
 To run the service locally:
 
 ```
@@ -29,7 +37,7 @@ python query/ -t [--test]
 ```
 
 Running tests and generating code coverage
-==========================================
+------------------------------------------
 To have a "clean" target from build artifacts:
 
 ```
