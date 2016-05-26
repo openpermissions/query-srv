@@ -206,4 +206,7 @@ def translate_id_pair(source_id):
         if parsed['schema_version'] == 's0':
             source_id['source_id_type'] = parsed['id_type']
             source_id['source_id'] = parsed['entity_id']
+    else:
+        source_id['source_id_type'] = source_id['source_id_type'].lower()
+
     return source_id

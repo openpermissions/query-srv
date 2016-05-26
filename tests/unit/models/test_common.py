@@ -177,9 +177,9 @@ def test_repository_request_with_empty_response():
 
 
 def test_translate_id_pair():
-    original_id = {'source_id_type': 'a_type', 'source_id': 'an_id'}
+    original_id = {'source_id_type': 'A_tYpE', 'source_id': 'an_id'}
     translated_id = translate_id_pair(original_id)
-    assert translated_id == original_id
+    assert translated_id == {'source_id_type': 'a_type', 'source_id': 'an_id'}
 
 
 def test_translate_id_pair_hub_key_s1():
