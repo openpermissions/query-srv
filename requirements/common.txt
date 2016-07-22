@@ -1,6 +1,6 @@
 click==3.3
 requests==2.4.3
 tornado==4.3
-opp-bass==1.0.9
+git+https://github.com/openpermissions/bass.git@OPP-37
 opp-chub==1.0.6
 opp-koi==1.0.10
